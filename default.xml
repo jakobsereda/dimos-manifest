@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 	<remote name="github" fetch="git@github.com:" />
-	<default remote="github" />
+	<default remote="github" revision="scarthgap" />
 	<project name="openembedded/bitbake" path="layers/bitbake" revision="2.8" />
-	<project name="openembedded/openembedded-core" path="layers/openembedded-core" revision="scarthgap" />
-	<project name="openembedded/meta-openembedded" path="layers/meta-openembedded" revision="scarthgap" />
-	<project name="kraj/meta-clang" path="layers/meta-clang" revision="scarthgap" />
-	<project name="meta-flutter/meta-flutter" path="layers/meta-flutter" revision="scarthgap" />
+	<project name="openembedded/openembedded-core" path="layers/openembedded-core" />
+	<project name="openembedded/meta-openembedded" path="layers/meta-openembedded" />
+	<project name="kraj/meta-clang" path="layers/meta-clang" />
+	<project name="meta-flutter/meta-flutter" path="layers/meta-flutter" />
 	<project name="UBCFormulaElectric/meta-dimos" path="layers/meta-dimos" revision="main" />
-	<project name="STMicroelectronics/meta-st-stm32" path="layers/meta-st-stm32" revision="scarthgap" />
-	<project name="STMicroelectronics/meta-st-openstlinux" path="layers/meta-st-openstlinux" revision="scarthgap" />
+	<project name="STMicroelectronics/meta-st-stm32mp" path="layers/meta-st-stm32" />
+	<project name="STMicroelectronics/meta-st-openstlinux" path="layers/meta-st-openstlinux" />
 </manifest>
