@@ -2,5 +2,12 @@
 <manifest>
 	<remote name="github" fetch="https://github.com" />
 	<default remote="github" />
-	<project name="meta-flutter/meta-flutter" path="layers/meta-flutter" revision="scarthgap" />
+	<project name="openembedded/bitbake" path="layers/bitbake" revision="2.8" />
+	<project name="openembedded/openembedded-core" path="layers/openembedded-core" revision="scarthgap" />
+	<project name="openembedded/meta-openembedded" path="layers/meta-openembedded" revision="scarthgap" />
+	<project name="kraj/meta-clang" path="layers/meta-clang" revision="scarthgap" />
+	<project name="meta-flutter/meta-flutter" path="layers/meta-flutter" revision="main" />
+	<project name="UBCFormulaElectric/meta-dimos" path="layers/meta-dimos" revision="scarthgap" />
+	<project name="STMicroelectronics/meta-st-stm32" path="layers/meta-st-stm32" revision="scarthgap" />
+	<project name="STMicroelectronics/meta-st-openstlinux" path="layers/meta-st-openstlinux" revision="scarthgap" />
 </manifest>
