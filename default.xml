@@ -12,7 +12,7 @@
 	<project name="openembedded/meta-openembedded" path="layers/meta-openembedded" />
 	<project name="kraj/meta-clang" path="layers/meta-clang" />
 	<project name="meta-flutter/meta-flutter" path="layers/meta-flutter" />
-	<project name="UBCFormulaElectric/meta-dimos" path="layers/meta-dimos" revision="main" />
+	<project name="UBCFormulaElectric/meta-dimos" path="layers/meta-dimos" />
 	<project name="STMicroelectronics/meta-st-stm32mp" path="layers/meta-st-stm32" />
 	<project name="STMicroelectronics/meta-st-openstlinux" path="layers/meta-st-openstlinux" />
 </manifest>
