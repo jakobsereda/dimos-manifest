@@ -2,6 +2,11 @@
 <manifest>
 	<remote name="github" fetch="https://github.com" />
 	<default remote="github" revision="scarthgap" />
+
+	<project name="jakobsereda/dimos-manifest" path=".manifest" revision="main">
+		<linkfile src="setup.sh" dest="setup.sh" />
+	</project>
+
 	<project name="openembedded/bitbake" path="layers/bitbake" revision="2.8" />
 	<project name="openembedded/openembedded-core" path="layers/openembedded-core" />
 	<project name="openembedded/meta-openembedded" path="layers/meta-openembedded" />
