@@ -23,7 +23,7 @@ for layer in "${layers[@]}" ; do
 	bitbake-layers add-layer "$layer"
 done
 
-echo -e "MACHINE ?= \"stm32mp1\"\n" >> "${WORKSPACE}/build/conf/local.conf"
+echo -e "\nMACHINE ?= \"stm32mp1\"\n" >> "${WORKSPACE}/build/conf/local.conf"
 
 echo -e "# Set distro\nDISTRO ?= \"openstlinux-weston\"\n" >> "${WORKSPACE}/build/conf/local.conf"
 
