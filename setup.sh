@@ -23,6 +23,18 @@ for layer in "${layers[@]}" ; do
 	bitbake-layers add-layer "$layer"
 done
 
-# TODO: append to local conf? this is a bad temp fix, the details should be in dimos layer...?
+echo -e "MACHINE ?= \"stm32mp1\"\n" >> "${WORKSPACE}/build/conf/local.conf"
 
-cat "test"
+echo -e "# Set distro\nDISTRO ?= \"openstlinux-weston\"\n" >> "${WORKSPACE}/build/conf/local.conf"
+
+echo -e "# Reduce load on host" >> "${WORKSPACE}/build/conf/local.conf"
+echo -e "BB_NUMBER_THREAD = \"4\"" >> "${WORKSPACE}/build/conf/local.conf"
+echo -e "PARALLEL_MAKE = \"-j 4\"\n" >> "${WORKSPACE}/build/conf/local.conf"
+
+echo -e "# Accept STM EULA" >> "${WORKSPACE}/build/conf/local.conf"
+echo -e "ACCEPT_EULA_stm32mp1 = \"1\"\n" >> "${WORKSPACE}/build/conf/local.conf"
+
+echo -e "IMAGE_INSTALL:append = \" flutter-engine flutter-pi dimos-app \"\n" >> "${WORKSPACE}/build/conf/local.conf"
+
+echo -e "DISTRO_FEATURES:append = \" opengl \"\n" >> "${WORKSPACE}/build/conf/local.conf"
+
